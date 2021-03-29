@@ -10,104 +10,14 @@
     <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="owl.theme.default.min.css">
     <link rel="stylesheet" href="our-work.css">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            overflow: hidden;
-        }
+    <title>my work</title>
 
-
-
-        .owl-carousel.owl-rtl {
-            min-height: 100vh;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-
-
-        }
-
-        .card {
-            color: black
-        }
-
-        .our-work-text-wraper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-
-        }
-
-        h1 {
-            color: white;
-            font-weight: bolder;
-
-        }
-
-        .card {
-            border: none;
-        }
-
-        .nav-link {
-            font-size: 1.35rem;
-        }
-
-        .card {
-            margin: 0 auto;
-        }
-
-        @media (max-width: 767px) {
-            .our-work-text-wraper {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: auto;
-
-            }
-
-            .owl-carousel.owl-rtl {
-                min-height: auto;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-
-
-            }
-
-            @media (max-width:576px) {
-                body {
-                    background-color: black;
-                    color: white;
-                    overflow: auto;
-                }
-            }
-
-            @media (max-width:370px) {
-                .our-work-text-wraper {
-                    padding: 20px 0 !important;
-                }
-            }
-
-            @media (max-width:340px) {
-                .our-work-text-wraper {
-                    padding: 0 0 !important;
-                }
-            }
-        }
-    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#"><img src="logo.png" width="200" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -137,59 +47,39 @@
             <div class="our-work-carousel-wraper">
                 <div class="row no-gutters">
                     <div class="col-md-3 col-12 ">
-                        <div class="our-work-text-wraper py-5 py-sm-5 py-md-0 ">
+                        <div class="our-work-text-wraper py-5  ">
                             <h1>my work</h1>
                         </div>
                     </div>
                     <div class="owl-carousel col-md-9 col-12    ">
-                        <div class="card mb-5" style="width: 18rem;">
-                            <img src="cotchy.png" class="card-img-top" alt="...">
+
+
+                        <a href="" class="card text-decoration-none ">
+                            <img src=" cotchy.png" class="card-img-top">
+
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
+                                <h5 class="text-uppercase">Cotchy</h5>
+                                <div class="">
+                                    <div class="row">
+
+                                        <div class="role col">
+                                            <label class="text-muted ">:Role</label>
+                                            <p class="font-weight-bold">Full Stack Develper</p>
+                                        </div>
+                                        <div class="client-wraper col">
+                                            <label class="text-muted">:Client</label>
+                                            <p class="font-weight-bold">Freelance</p>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
-                        </div>
-                        <div class="card mb-5" style="width: 18rem;">
-                            <img src="cotchy.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-
-                            </div>
-                        </div>
-                        <div class="card mb-5" style="width: 18rem;">
-                            <img src="cotchy.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-
-                            </div>
-                        </div>
-                        <div class="card mb-5" style="width: 18rem;">
-                            <img src="cotchy.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the card's content.</p>
-
-                            </div>
-                        </div>
+                        </a>
 
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -208,25 +98,28 @@
         $(document).ready(function () {
             $(".owl-carousel").owlCarousel(
                 {
-                    items: 4,
+                    items: 3.5,
                     loop: true,
-                    margin: 10,
+                    margin: 30,
                     autoplay: true,
-                    autoplayTimeout: 2000,
+                    autoplayTimeout: 3000,
                     autoplayHoverPause: true,
                     rtl: true
                     ,
                     responsive: {
                         0: {
-                            items: 1,
+                            items: 1.5,
+
+                        }, 567: {
+                            items: 2.25,
 
                         }, 768: {
-                            items: 2,
+                            items: 2.25,
 
                         },
-                        1150: { items: 3 },
+                        1150: { items: 2.75 },
                         1500: {
-                            items: 4,
+                            items: 3.75,
 
                         }
                     }

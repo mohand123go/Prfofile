@@ -94,6 +94,7 @@
 <script>
     let blocks = document.getElementsByClassName('block')
     let container = document.getElementsByClassName('container')
+
     let hs = new HorizontalScroll.default({
         blocks: blocks,
         container: container,
@@ -109,9 +110,10 @@
     for (let i = 0; i < blocks.length; i++) {
         blocks[i].style.background = `url(${imagesArr[i]})`
         blocks[i].classList.add('image-setting')
-        console.log(blocks[i].style)
+
 
     }
+
 
 </script>
 

@@ -110,3 +110,11 @@ h2{
     right: -60px ;
    
 }
+
+lottie-player{
+    position: absolute;
+    top: 50%;
+    transform: translate(0% ,-50%);
+    transition: opicty 5s ease-in-out ;
+    
+}

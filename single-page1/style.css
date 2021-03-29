@@ -54,4 +54,11 @@ body,html{
 .gallery-item{
 
 }
+
+.gallery-item figure {
+    padding: 10px;
+    background-color:  black ;
+  border-radius: 0.9375rem;
+
+}
 /*project-body end*/
