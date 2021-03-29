@@ -1,4 +1,5 @@
 let bigTitle = document.getElementById('big-title-id')
+let hoverShowImg = document.getElementById('hover-show-img')
 
 let cursorImg = document.createElement('img')
 
@@ -7,23 +8,24 @@ cursorImg.setAttribute('src', 'image.jpg')
 
 
 
-bigTitle.addEventListener('mousemove', (e) => {
+hoverShowImg.addEventListener('mousemove', (e) => {
     console.log(e)
-    cursorImg.style = `transition:opacity 0.5s ease-in-out;position: absolute; left: ${e.pageX}px ;top: ${e.pageY}px;width:400px ;transform: translate(-100%,-50%);border-radius:15px `
+    cursorImg.style = `transition:opacity 0.5s ease-in-out;position: absolute; left: ${e.pageX}px ;top: ${e.pageY}px;width:300px ;transform: translate(-0%,-50%);border-radius:15px `
 
 
 })
 
-bigTitle.addEventListener('mouseenter', (e) => {
+hoverShowImg.addEventListener('mouseenter', (e) => {
     bigTitle.appendChild(cursorImg)
     cursorImg.style = 'opacity:0;'
 
 
 
 
+
 })
 
-bigTitle.addEventListener('mouseleave', (e) => {
+hoverShowImg.addEventListener('mouseleave', (e) => {
 
     let elem = new Promise((res, rej) => {
         cursorImg.style.opacity = 0
