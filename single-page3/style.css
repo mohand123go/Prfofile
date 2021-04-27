@@ -1,0 +1,64 @@
+body,html{
+ 
+    height: 100% !important;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+.bg-custome-dark{
+    background-color: black !important;
+}
+
+.single-project{
+    background-color: white;
+    padding:  35px 20px 0 20px;
+}
+
+.horz-line{
+    background-color: black;
+    height: 0.10px;
+    width: 100%;
+    opacity: 0.1;
+}
+
+.custome-border{
+    border-radius: 0.9375rem;
+}
+/*project-header start*/
+
+.project-header{
+
+}
+
+
+
+.project-heaer_img-wraper{
+    max-width: 100px;
+  
+}
+.project-heaer_img-wraper img {
+  
+}
+
+.projcet-header__text-wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*project-header emd*/
+
+
+/*project-body start*/
+.gallery-item{
+
+}
+
+.gallery-item figure {
+    padding: 10px;
+    background-color:  black ;
+  border-radius: 0.9375rem;
+
+}
+/*project-body end*/
